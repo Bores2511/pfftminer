@@ -1,0 +1,15 @@
+[Unit]
+Description=PFFT Miner Bot - Multi-Core Edition (Pow Free Fair Token)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/pfftminer
+EnvironmentFile=-/root/pfftminer/.env
+ExecStart=/usr/bin/python3 /root/pfftminer/pfft_miner.py
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
