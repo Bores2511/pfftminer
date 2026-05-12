@@ -1,2 +1,14 @@
+# Core dependencies
 web3>=6.0.0
 pycryptodome>=3.20.0
+
+# GPU — NVIDIA CUDA (butuh CUDA Toolkit terinstall di sistem)
+# Install: pip install pycuda
+# pycuda>=2022.1
+
+# GPU — AMD / Intel / semua GPU via OpenCL
+# Install: pip install pyopencl
+# pyopencl>=2023.1
+
+# Numpy (dibutuhkan oleh CUDA/OpenCL solver)
+numpy>=1.24.0
